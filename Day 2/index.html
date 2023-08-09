@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>shasa</title>
+  </head>
+  <body>
+    <!-- tag table berfungsi untuk membuat table di html
+    tr berfungsi untuk membuat table secara horizontal
+    th berfungsi untuk  -->
+    <table>
+      <tr>
+        <th>No</th>
+        <th>Nama</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>Shasa</td>
+      </tr>
+    </table>
+
+    <!-- border berfungsi untuk memberikan garis di table -->
+    <table border="1">
+      <tr>
+        <th>No</th>
+        <th>Nama</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>Shasa</td>
+      </tr>
+    </table>
+
+    <!-- colspan berfungsi untuk menggabungkan table -->
+    <table border="1">
+      <tr>
+        <th colspan="2">Nomor antrian</th>
+        <th>Nama</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>Shasa</td>
+      </tr>
+    </table>
+
+    <table border="1">
+      <tr>
+        <th colspan="2">Nomor antrian</th>
+        <th>Nama</th>
+      </tr>
+      <tr>
+        <td colspan="2">1</td>
+        <td>Shasa</td>
+      </tr>
+    </table>
+
+    <!-- align berfungsi menentukan posisi text -->
+    <table border="1" width="100%">
+      <tr>
+        <td align="left">Kiri</td>
+        <td align="center">Tengah</td>
+        <td align="right">Kanan</td>
+      </tr>
+      <tr>
+        <td align="left">Data rata Kiri</td>
+        <td align="center">Data rata Tengah</td>
+        <td align="right">Data rata Kanan</td>
+      </tr>
+    </table>
+
+    <br />
+    <br />
+
+    <h1>Belajar Form</h1>
+
+    <!-- form berfungsi untuk membuat form di html
+         action berfungsi untuk menentukan tujuan form
+         method berfungsi untuk menentukan metode penguiriman data 
+    -->
+    <form action="" method="get">
+      <!-- 
+            label berfungsi untuk membuat label di form
+            input berfungsi untuk membuat input di form
+            type berfungsi untuk menentukan type di form
+            name berfungsi untuk menentukan nama inputan
+            placeholder berfungsi untuk menentukan placeholder/contoh inputan
+         -->
+      <label for="nama">Nama</label>
+      <input type="text" name="nama" placeholder="Nama Kamu" />
+
+      <br />
+
+      <label for="password">Password</label>
+      <input type="password" name="password" id="password" placeholder="Password Kamu" />
+
+      <!-- checkbox menampilkan inputan berjenis checkbox -->
+      <input type="checkbox" name="show" onclick="showpassword()" />
+      <label for="password">Lihat Password</label>
+
+      <br />
+
+      <textarea name="pesan" id="" cols="30" rows="10">Pesan Kamu</textarea>
+
+      <br />
+
+      <label for="">Jenis Kelamin</label>
+      <select name="" id="">
+        <option value="">Laki-laki</option>
+        <option value="">Perempuan</option>
+      </select>
+
+      <label for="">Jenis Kelamin</label>
+
+      <input type="radio" name="Laki-laki" id="" />
+      <label for="">Laki-laki</label>
+
+      <input type="radio" name="Perempuan" id="" />
+      <label for="">Perempuan</label>
+
+      <br />
+      <!-- 
+            button type submit berfungsi untuk melakukan proses form
+            button type reset berfungsi untuk mereset proses form
+          -->
+      <button type="submit">Submit</button>
+      <button type="reset">Reset Form</button>
+    </form>
+
+    <!-- center berfungsi untuk membuat elemen berada ditengah -->
+    <center>
+      <img src="Moodboard karina cute (1).jpg" alt="karin" width="100" />
+      <h1>Karina</h1>
+    </center>
+
+    <script>
+      function showpassword() {
+        var password = document.getElementById('password');
+        if (password.type === 'password') {
+          password.type = 'text';
+        } else {
+          password.type = 'password';
+        }
+      }
+    </script>
+  </body>
+</html>
