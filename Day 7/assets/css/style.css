@@ -1,0 +1,35 @@
+.container {
+    width: 100%;
+    height: 100vh;
+    /* untuk membuat elemen menjadi flexible */
+    display: flex;
+    /* untuk mengatur posisi anak pada horizontal */
+    justify-content: center;
+    /* untuk mengatur posisi anak pada vertikal */
+    align-items: center;
+    /* untuk memberi jarak antar item */
+    gap: 20px;
+    background-color: pink;
+    /* mengubah jenis arah flex */
+    flex-direction: column;
+}
+.item {
+    width: 100px;
+    height: 100px;
+    background-color: palevioletred;
+    border-radius: 12px;
+}
+
+.grid-container {
+    /* membuat elemen flexible menggunakan grid */
+    display: grid;
+    /* untuk mengatur jumlah kolom */
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.grid-item {
+    background-color: p;
+    border-radius: 12px;
+    height: 100px;
+}

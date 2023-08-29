@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Preahvihear&display=swap');
+
+* {
+  font-family: 'Preahvihear', sans-serif;
+}
+
+h2 {
+  color: palevioletred;
+}
+
+/* contoh selector class, 
+diawali dengan titik kemudian nama class */
+.text-pink {
+  color: pink;
+}
+
+.judul {
+  color: pink;
+}
+
+/* 
+contoh selector id, 
+diawali dengan pagar kemudian nama id 
+*/
+#container {
+  background-color: pink;
+  color: palevioletred;
+}
+
+/* dashed itu strip strip 
+kalo solid itu seluruhnya */
+.rectangle {
+  width: 100px;
+  height: 100px;
+
+  /* properti background color */
+  background-color: palevioletred;
+
+  border: 3px solid pink;
+}
+
+.rectangle-image {
+  width: 1500px;
+  height: 300px;
+
+  /* properti background color */
+  background-color: pink ;
+
+  /* properti background image */
+  background-image: url(../image/🐇.jpg);
+
+  /* properti background repeat */
+  background-repeat: no-repeat;
+
+  /* agar ukuran ngepas di rectangle */
+  background-size: contain;
+}
+
+.font-lain {
+  font-family: 'Preahvihear', sans-serif;
+}
